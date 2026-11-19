@@ -5,7 +5,6 @@ on:
 
 jobs:
   sync:
-    needs: test
     runs-on: ubuntu-latest
     outputs:
       state: ${{ steps.sync_check.outputs.state }}
